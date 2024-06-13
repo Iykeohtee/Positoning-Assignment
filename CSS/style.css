@@ -1,0 +1,252 @@
+
+
+/* html{
+    font-size: 100px;
+} */
+
+/* CSS Pseudo Selectors or classes */
+
+/* hover: Applies styles when the user hovers over an element 
+  with a pointing device (e.g., mouse). */
+/* h3:hover{
+    color: red;
+    font-size: 20px; 
+}    */
+
+/* focus:  Applies styles when an element is focused (e.g., an input field). */
+/* button:focus{
+    color: cyan;     
+}       */
+
+/* Active:  Applies styles when an element is being activated (e.g., being clicked). */
+/* h1:active{
+    color: blue;
+} */
+
+
+/* nth child */
+/* Selects every <p> element that is the second child of its parent
+the <p> must be the second element within the parent */
+/* p:nth-child(2){                
+    color: yellow;        
+}      */
+
+
+/* first child 
+Selects every <p> elements that is the first child of its parent*/
+/* #container p:first-child{
+    background-color: red;
+} */
+
+
+/* first of type  */
+/* Selects every <h1> element that is the first <h1> element of its parent(in
+this case the parent is container) and the h1 here mustn't necessarlity be the 
+first element but it has to be first h1*/ 
+/* #container h1:first-of-type{            
+    color: blueviolet;  
+} */
+
+
+/* last of type: works the same way the first-of-type-works */
+
+/* nth-child(n)
+Selects every <p> element that is the second child of its parent */ 
+/* p:nth-child(5){
+    color: chocolate;  
+} */
+
+
+
+
+
+
+/* descenants selectors */
+/* using space */
+/* .container h1{
+    color: red;    
+}   */
+/* Child selector: rep. using > */
+/* .container > p1 {
+    color: blueviolet;  
+} */
+
+/* adjascent sibling selector : rep using the + sign*/
+/* .container + h1{
+    color: azure; 
+} */
+
+/* Assignment: Find out the other selector that selects all elements 
+that are next to a particular element */   
+
+
+/* CSS color systems */
+  /* p { */
+     /* select using color name : using the color name which we all know */
+     /* color: red; */
+     
+     /* select using the RGB color code: Red Green Blue */
+       /* color: rgb(56, 135, 10);  */
+       /* color: rgba(250, 0, 0, 0.8); */  
+
+       /* Hex */ 
+        /* color: #ff00a0;    */
+       
+  
+     /* select using the hex color code */
+  /* } */
+
+
+
+/* Some CSS text properties */
+/* p{
+    color: red;
+    background-color: blue;
+    text-decoration: line-through;
+    text-transform: lowercase; 
+    letter-spacing: 3px; 
+    word-spacing: 2px;
+    line-height: 4px; 
+    text-shadow: 3px 3px 5px red;   
+} */
+
+
+
+/* .first{
+    background-color: red;
+}
+.second{
+    background-color: blue; 
+}
+
+.third{
+    background-color: cyan; 
+}
+.fourth{
+    background-color: blueviolet;   
+} */
+
+
+
+
+/* html{
+    font-size: 40px;   
+} */
+
+
+/* CSS Units : absolute units/length and relative length */
+/* Absolute lengths: points, cm, mm, picas, inches, px etc */
+/* pixel: it is represented using px */  
+/* Relative: viewport-width, viewport-height, %, em, rem, ex, vmin */
+/* V- Viewport */
+/* Percentage: it is dependent on the parent element */
+/* .container{
+    background-color: rgb(255, 0, 0); 
+    height: 500px;
+    width: 700px; 
+}
+.child{
+    font-size: 1rem;  
+    background-color: blue;  
+    width: 90%;   
+    height: 90%;  
+} */
+
+/* rem: it's represented using rem and simply put it is relative to the 
+root element */ 
+
+
+/* em: find out how it works and try using it and know the difference
+ between it and other relative units. */
+
+
+ /* CSS Inheritance: the key word is inherit and it inherits the property 
+ of the parent  */ 
+ /* span{
+    color: blueviolet;   
+    font-size: 30px; 
+ }
+
+ .extra {   
+    color: inherit;         
+ } */
+
+
+ /* CSS positioning: this has to do with how your elemnts are laid out 
+ in your site  */
+/* Static, relative, absolut, fixed, sticky */
+
+body{
+    background-color: gray;
+}
+
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: red; 
+     /*Relative means positioning to its normal position  */
+    /* left, right, top and buttom property comes into play */
+    position: relative; 
+    left: 50px;  
+    top: 40px;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: Green;
+    z-index: -10;
+    position: relative;
+    top: -90px;
+    left: 200px;
+}
+
+.box3{
+    height: 50px;
+    width: 50px;
+    background-color: blue;  
+    position: fixed;  
+    right: 15px;
+    bottom: 20px; 
+    border-radius: 60px;   
+}   
+.box4{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    z-index: 20;
+    position: relative;  
+    top: -150px;
+    left: 250px;
+}
+.box5{
+    height: 200px;
+    width: 200px;
+    background-color: blue; 
+    position: relative;  
+    top: -200px;
+    left: 300px; 
+}
+.box6{
+    height: 200px;
+    width: 200px;
+    background-color: brown;  
+    z-index: -10;
+    position: relative;  
+    top: -250px;
+    left: 350px;
+}
+.box7{
+    height: 200px;
+    width: 200px;
+    background-color: blue;  
+}
+
+/* Fixed Postioning: It is relative to your viewport(your screen size) */
+
+
+
+
+/* Set the left and top of the box 2 to 10px and 30px respectively */  
+/* Set the left and top of the box 3 to 15px and 20px respectivevly*/
+/* Let box 2 be on top of the other two boxes */  
